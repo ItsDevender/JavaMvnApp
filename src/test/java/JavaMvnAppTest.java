@@ -15,12 +15,14 @@ class JavaMvnAppTest {
 
     @AfterEach
     void tearDown() {
+        value1 = value2 = 0;
     }
 
     @Test
     void main() {
-    //    sum();
-    //    subtract();
+    JavaMvnApp app = new JavaMvnApp();
+    app.sum(5,6);
+    app.subtract(6,6);
     }
 
     @Test
